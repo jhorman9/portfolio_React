@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Home.css'
 import icon from '../images/iworking.png'
 
-const Home = () => {
+const Home = ({curriculum}) => {
     return (
         <div className='Home'>
             <div className='Home--description'>
@@ -12,7 +12,7 @@ const Home = () => {
                 <p className='Home--description__secondparrafo'>HTML5, CSS3 y Javascript. También sé usar libreria como React Js, logrando asi dominar el uso de Componentes, React-Route, Hooks, State, Props, peticion HTTP con axios, custom hooks, key, react hooks form.</p>
                 <div className='Home--description__button'>
                     <button>
-                        <a href="">Descargar CV</a>
+                        <a href={curriculum} download='Developer_Jhorman-Nieto-CV'>Descargar CV</a>
                     </button>
                 </div>
             </div>
