@@ -1,3 +1,7 @@
+.Projects{
+    overflow-x: hidden;
+}
+
 .Projects .Projects__title{
     text-align: center;
     animation-name: text;
@@ -35,6 +39,12 @@
     -o-border-radius: 25px;
 }
 
+@media(max-width:1000px){
+    .Projects .Projects__card-container .Projects__card{
+        width:225px;
+    }
+}
+
 .Projects .Projects__card-container .Projects__card .Projects__img{
     width: 100%;
     height: 150px;
@@ -44,3 +54,4 @@
     width: 45px;
     height: 45px;
 }
+
